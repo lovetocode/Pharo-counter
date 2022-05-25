@@ -44,3 +44,8 @@ self assert: c count equals: 2
 CounterTest >> testInitialize [ 
  self assert: Counter new count equals:0
 ]
+
+{ #category : #tests }
+CounterTest >> testPrintOn [ 
+self assert: Counter new printString  equals: 'a Counter with value: 0'
+]
